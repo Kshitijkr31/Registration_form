@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/download"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:id="@+id/signuptitle"
+       android:layout_width="369dp"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="25dp"
+       android:layout_marginLeft="25dp"
+       android:layout_marginTop="25dp"
+       android:layout_marginEnd="25dp"
+       android:layout_marginRight="25dp"
+       android:layout_marginBottom="25dp"
+       android:gravity="center"
+       android:paddingTop="10dp"
+       android:text="Sign up"
+       android:textColor="@color/white"
+       android:textSize="35dp"
+       android:textStyle="bold" />
+
+   <EditText
+       android:id="@+id/username"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/signuptitle"
+       android:layout_centerHorizontal="true"
+       android:layout_marginStart="18dp"
+       android:layout_marginTop="18dp"
+       android:layout_marginEnd="18dp"
+       android:layout_marginBottom="18dp"
+       android:hint="Username"
+       android:padding="20dp"
+       android:textColorHint="@color/black"
+       android:drawableLeft="@drawable/baseline_person_24"
+       android:drawablePadding="20dp"/>
+
+   <EditText
+       android:id="@+id/email"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/username"
+       android:layout_centerHorizontal="true"
+       android:layout_marginStart="18dp"
+       android:layout_marginTop="18dp"
+       android:layout_marginEnd="18dp"
+       android:layout_marginBottom="18dp"
+       android:hint="Email"
+       android:padding="20dp"
+       android:textColorHint="@color/black"
+       android:drawableLeft="@drawable/baseline_email_24"
+       android:drawablePadding="20dp"/>
+
+   <EditText
+       android:id="@+id/password"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/email"
+       android:layout_centerHorizontal="true"
+       android:layout_marginStart="18dp"
+       android:layout_marginTop="18dp"
+       android:layout_marginEnd="18dp"
+       android:layout_marginBottom="18dp"
+       android:hint="Password"
+       android:padding="20dp"
+       android:textColorHint="@color/black"
+       android:drawableLeft="@drawable/baseline_password_24"
+       android:drawablePadding="20dp"
+       android:inputType="textPassword"/>
+
+   <EditText
+       android:id="@+id/repassword"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/password"
+       android:layout_centerHorizontal="true"
+       android:layout_marginStart="18dp"
+       android:layout_marginTop="18dp"
+       android:layout_marginEnd="18dp"
+       android:layout_marginLeft="18dp"
+       android:layout_marginBottom="18dp"
+       android:hint="Confirm Password"
+       android:padding="20dp"
+       android:textColorHint="@color/black"
+       android:drawableLeft="@drawable/baseline_password_24"
+       android:drawablePadding="20dp"
+       android:inputType="textPassword"/>
+
+   <TextView
+       android:id="@+id/rememberme"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/repassword"
+       android:layout_alignParentStart="true"
+       android:layout_marginStart="34dp"
+       android:layout_marginTop="-14dp"
+       android:drawableTint="#DD0F0F"
+       android:text="Remember me"
+       android:textColor="@color/black"
+       android:textColorHint="@color/black"
+       android:textSize="20dp" />
+
+   <CheckBox
+       android:id="@+id/myCheckBox"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_centerHorizontal="true"
+       android:layout_marginStart="15dp"
+       android:layout_marginBottom="130dp"
+       android:layout_toEndOf="@+id/rememberme" />
+
+   <Button
+       android:id="@+id/signupbtn"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/repassword"
+       android:layout_centerHorizontal="true"
+       android:layout_marginStart="20dp"
+       android:layout_marginTop="26dp"
+       android:layout_marginEnd="20dp"
+       android:layout_marginBottom="20dp"
+       android:backgroundTint="@color/design_default_color_on_secondary"
+       android:text="REGISTER"
+       android:textSize="25dp" />
+
+   <LinearLayout
+       android:id="@+id/socialicons"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_marginLeft="30dp">
+
+      <ImageView
+          android:layout_width="48dp"
+          android:layout_height="48dp"
+          android:src="@drawable/downloade"
+          android:layout_margin="20dp"/>
+
+      <ImageView
+          android:layout_width="48dp"
+          android:layout_height="48dp"
+          android:src="@drawable/insta"
+          android:layout_margin="20dp"/>
+
+      <ImageView
+          android:layout_width="48dp"
+          android:layout_height="48dp"
+          android:src="@drawable/x"
+          android:layout_margin="20dp"/>
+
+      <ImageView
+          android:layout_width="48dp"
+          android:layout_height="48dp"
+          android:src="@drawable/fb"
+          android:layout_margin="20dp"/>
+   </LinearLayout>
+
+</RelativeLayout>
